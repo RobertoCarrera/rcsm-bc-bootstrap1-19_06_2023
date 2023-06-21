@@ -9,25 +9,37 @@
     <title>Ejercicio 1</title>
 </head>
     <body>
+        <!-- Container que engloba todo el contenido -->
         <div class="container container_form">
-            <div class="row mb-4 justify-content-center align-items-center">
-                <div class="col-12">
+            <!-- Fila que contiene el título y la introducción del formulario.
+            Le aplico un margin-bottom para que se separe del form -->
+            <div class="row mb-4">
+                <!-- En esta row sólo habrá una columna que incluirá todo -->
+                <div class="col">
                     <h2>Login Form</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, necessitatibus 
                         rem repellendus delectus minus asfsa asg aga agagds gas.
                     </p>
                 </div>
             </div>
+            <!-- En esta fila, incluiremos todo el formulario. Tendrá 3 columnas -->
             <div class="row align-items-center justify-content-center form">
+                <!-- Esta columna ocupará 10 partes e incluye el texto
+                dentro del formulario -->
                 <div class="col-10 form_text">
                     <h5>Login to our site</h5>
                     <h6>Enter Username and Password</h6>
                 </div>
+                <!-- Esta columna ocupará 2 partes para ponerse a la derecha 
+                de la anterior, acabar de ocupar todo el ancho y crear un salto. 
+                Contiene el icono del candado -->
                 <div class="col-2 form_img">
                     <span class="material-symbols-outlined">
                         lock
                     </span>
                 </div>
+                <!-- Esta columna ocupará 12 partes para coger el ancho completo
+                de la fila. Incluye los 2 inputs y el botón de login -->
                 <div class="col-12 form_inputs_container">
                     <div class="form_inputs">
                         <input type="text" class="form-control" placeholder="Username">
@@ -35,32 +47,38 @@
                     <div class="form_inputs">
                         <input type="password" class="form-control"  placeholder="Password">
                     </div>
-                    <div class="form_inputs d-grid gap-2">
+                    <div class="d-grid gap-2 form_inputs">
                         <button type="submit" class="btn btn-primary button_login">Log in</button>
                     </div>
                 </div>
             </div>
+            <!-- Esta fila incluye el texto de "Login with", con sólo 1 columna
+            y un margin aplicado -->
             <div class="row">
                 <div class="col m-5">
                     <h6>Login with</h6>
                 </div>
             </div>
-            <div class="row justify-content-center container_social_media">
-                <div class="col-3 button_social_media_container">
+            <!-- Esta fila incluye los botones de RRSS -->
+            <div class="row justify-content-center">
+                <!-- Cada columna tiene asignado 2 tamaños diferentes
+                el col-12 para que se apile en tamaño móvil y el col-sm-3
+                para el tamaño en grande -->
+                <div class="col-12 col-sm-3 button_social_media_container">
                     <div class="btn button_social_media">
-                        <img src="./img/f_facebook.png" class="img-fluid" alt="">
+                        <img src="./img/f_facebook.png"alt="Foto del logo de Facebook">
                         <h5>Facebook</h5>
                     </div>
                 </div>
-                <div class="col-3 button_social_media_container">
+                <div class="col-12 col-sm-3 button_social_media_container">
                     <div class="btn button_social_media">
-                        <img src="./img/pajaro_twitter.png" class="img-fluid"  alt="">
+                        <img src="./img/pajaro_twitter.png" alt="Foto del logo de Twitter">
                         <h5>Twitter</h5>
                     </div>
                 </div>
-                <div class="col-3 button_social_media_container">
+                <div class="col-12 col-sm-3 button_social_media_container">
                     <div class="btn button_social_media">
-                        <img src="./img/instagram_blanco.png" class="img-fluid"  alt="">
+                        <img src="./img/instagram_blanco.png" alt="Foto del logo de Instagram">
                         <h5>Instagram</h5>
                     </div>
                 </div>

@@ -1,40 +1,73 @@
+/* 
+    Aplico el estilo al background, le pongo una foto en el centro 
+    y pongo ya todo el texto centrado
+*/
 body{
     background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
+
     color: white;
+
     text-align: center;
 }
 
+/* 
+    En este caso, debo aplicarle un ancho máximo y le 
+    aplico margin-top para que se centre verticalmente
+*/
 .container_form{
     max-width: 580px;
+    
     margin-top: 10em;
 }
 
-
+/* 
+    Le aplico el color de fondo en blanco, el color de la fuente
+    y los bordes redondeados
+*/
 .form{
-    border-radius: 0.5em;
     background-color: white;
     color: gray;
+
+    border-radius: 0.5em;
 }
 
+/* 
+    En este caso, pongo el texto a la izquierda y le aplico el padding
+    correspondiente
+*/
 .form_text{
     text-align: left;
+
     padding: 2em;
 }
 
+/* 
+    Aumento el tamaño del icono
+*/
 .form_img .material-symbols-outlined{
     font-size: 3em;
 }
 
+/* 
+    Le aplico el color grisaceo de fondo a los inputs
+*/
 .form_inputs_container{
     background-color: rgba(128, 128, 128, 0.205);
 }
 
+/* 
+    Le aplico un margin a los inputs y botón del form para
+    que se separen
+*/
 .form_inputs{
     margin: 1em;
 }
 
+/* 
+    Aplico estilos al botón de login y cambio el hover
+*/
 .button_login{
     background-color: rgb(75, 223, 191);
     color: black;
@@ -44,25 +77,46 @@ body{
     font-weight: bolder;
 }
 
+.button_login:hover{
+    background-color: rgb(80, 241, 206);
+}
+
+/* 
+    Le aplico padding para que se separe del borde y se junten más entre ellos
+*/
+
 .button_social_media_container{
     padding: 0.1em;
 }
 
+/* 
+    Le aplico estilos a los botones de RRSS
+*/
 .button_social_media{
-    border: 1px solid rgb(129, 129, 129);
-    color: rgb(129, 129, 129);;
+    color: rgb(129, 129, 129);
     background-color: black;
+
+    border: 1px solid rgb(129, 129, 129);
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* 
+    Le aplico el tamaño de la fuente y le quito
+    el margin para que el flex del container se ocupe
+    de centrarlo en el div
+*/
 .button_social_media h5{
     font-size: 1em;
-    margin: 0.2em;
+
+    margin: 0;
 }
 
+/* 
+    Le aplico el tamaño deseado a las imágenes
+*/
 .button_social_media img{
     height: 2em;
     width: 2em;

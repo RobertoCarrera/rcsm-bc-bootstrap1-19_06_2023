@@ -1,0 +1,39 @@
+.form_section{
+    background-color: rgba(128, 128, 128, 0.116);
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 0.5em;
+}
+
+.contact_section_title{
+    color: skyblue;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.material-symbols-outlined{
+    font-size: 3em;
+}
+.contact_input{
+    display: flex;
+    align-items: center;
+}
+
+.contact_input input{
+    margin: 1em;
+    width: 60%;
+}
+
+.contact_input input::placeholder{
+    margin-left: 0.5em;
+}
+
+.contact_input:last-child input{
+    height: 10em;
+    margin: 0 1em 1em;
+}
+
+.contact_input:last-child input::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+}
