@@ -81,6 +81,9 @@ body{
     background-color: rgb(80, 241, 206);
 }
 
+.--bs-btn-active-bg{
+    background-color: black;
+}
 /* 
     Le aplico padding para que se separe del borde y se junten más entre ellos
 */
@@ -103,6 +106,10 @@ body{
     justify-content: center;
 }
 
+.button_social_media:hover{
+    background-color: rgb(80, 241, 206);
+}
+
 /* 
     Le aplico el tamaño de la fuente y le quito
     el margin para que el flex del container se ocupe
@@ -118,6 +125,6 @@ body{
     Le aplico el tamaño deseado a las imágenes
 */
 .button_social_media img{
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
 }
