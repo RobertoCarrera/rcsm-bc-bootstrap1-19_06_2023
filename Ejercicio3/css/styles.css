@@ -1,0 +1,197 @@
+#menu_container{
+
+    padding: 2em
+}
+
+/* **************** */
+/* EMPIEZAN ESTILOS */
+/*** DIV SUPERIOR ***/
+/* **************** */
+#menu_info{
+    padding: 1em;
+
+    background-color: rgb(235, 235, 235);
+    /* Le doy redondez sólo a las puntas superiores */
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    /* Le doy estilo flex y que se separen cada uno en su extremo horizontalmente
+    y centrado verticalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Aplico la font-size a todos los iconos como recomienda bootstrap */
+.bi{
+    font-size: 1em;
+}
+
+/* Aplico espacio entre los iconos para que se posicionen correctamente */
+#menu_info_contact i{
+    padding: 1em;
+
+    font-weight: bold;
+}
+
+/* Aplico estilos a los enlaces de login */
+#menu_info_login a{
+    margin: 1em;
+
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* **************** */
+/* EMPIEZAN ESTILOS */
+/*** DIV INFERIOR ***/
+/* **************** */
+#menu{
+    background-color: rgb(21, 172, 231);
+    color: white;
+
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    
+}
+
+#menu_links .bi{
+
+    color: white;
+}
+
+#menu_logotype{
+
+    max-width: 12em;
+}
+
+#menu_logotype img{
+    width: 10em;
+}
+
+
+
+
+
+
+
+#menu_icon{
+
+    max-width: 6em;
+    text-align: center;
+}
+
+#menu_icon a{
+
+    font-size: 2.5em;
+    color: white;
+    width: 250px;
+    padding: 0.1em 0.5em;
+}
+
+#menu_links ul{
+    margin: 0;
+    
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#menu_links ul li a{
+    padding: 1.2em;
+    text-decoration: none;
+    color: white
+}
+
+#menu_links ul li a:hover{
+
+    background-color: white;
+    color: black
+}
+
+#menu_links a:hover .bi{
+
+    background-color: white;
+    color: black;
+}
+
+#search_box{
+
+    margin: 0 auto;
+    max-width: 15em;
+    text-align: center;
+    background-color: white;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search_box .bi-search{
+
+    text-align: center;
+    color: gray;
+}
+
+#search_box input{
+
+    border: none;
+    border-radius: 0.5em;
+}
+
+#search_box input:focus{
+
+    outline: none;
+}
+
+#search_box input::placeholder{
+
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+#social_media{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_media .bi, #account .bi{
+
+    margin: 0.5em;
+    
+    color: white;
+    font-size: 1.5em;
+}
+
+#social_media{
+
+    max-width: 15em;
+    
+    text-align: right;
+}
+
+#account{
+
+    max-width: 5em;
+
+    background-color: rgb(20, 141, 189);
+    border-bottom-right-radius: 0.5em;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#account a{
+
+    padding: 1em;
+    display: block;
+}
