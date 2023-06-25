@@ -1,0 +1,69 @@
+.bi{
+
+    font-size: 1em;
+}
+
+.registry_amount{
+        
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.search_box{
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.search_box p, .registry_amount p{
+
+    margin: 0;
+}
+
+.registry_amount button{
+
+    min-width: 6em;
+
+    margin: 0.5em;
+
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(206, 206, 206);
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_box input{
+
+    margin: 0.5em;
+
+    border: 2px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+.action_table:first-child{
+
+    background-color: blue;
+
+}
+
+.action_table:nth-of-type(2){
+
+    background-color: green;
+}
+
+.action_table:last-child{
+
+    background-color: red;
+}
+
+table .table_header:nth-child(1), table .table_header:nth-child(3), table .table_header:nth-child(5){
+
+    display: flex;
+    justify-content: space-between;
+}
