@@ -1,8 +1,20 @@
+
+/* Aplico el tamaño a todos los iconos como recomienda bootstrap */
 .bi{
 
     font-size: 1em;
 }
 
+/* Aplicamos margen arriba para separar y el color del encabezado */
+.table_header_text{
+
+    margin-top: 2em;
+
+    color: blue;
+}
+
+/* Aplicamos flex en el div del selector de cantidad de registros para que paren
+de apilarse y los ponemos hacia la izquierda y centrados verticalmente */
 .registry_amount{
         
     display: flex;
@@ -10,6 +22,7 @@
     align-items: center;
 }
 
+/* Lo mismo con el div de la caja de búsqueda */
 .search_box{
 
     display: flex;
@@ -17,27 +30,31 @@
     align-items: center;
 }
 
+/* Le quitamos los margin a las p de los dos div anteriores para que
+se alinee verticalmente correctamente */
 .search_box p, .registry_amount p{
 
     margin: 0;
 }
 
+/* Aplicamos los estilos del dropdown de los registros */
 .registry_amount button{
-
+/* Un poco más de ancho de lo normal */
     min-width: 6em;
-
+/* Separación dentro */
     margin: 0.5em;
 
     background-color: white;
     color: black;
-    border: 2px solid rgb(206, 206, 206);
-
     
+    border: 2px solid rgb(206, 206, 206);
+    /* Y flex para poder crear espacio entre el valor y la flecha */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Estilos del input de búsqueda */
 .search_box input{
 
     margin: 0.5em;
@@ -46,24 +63,26 @@
     border-radius: 5px;
 }
 
-.action_table:first-child{
-
-    background-color: blue;
-
-}
-
-.action_table:nth-of-type(2){
-
-    background-color: green;
-}
-
-.action_table:last-child{
-
-    background-color: red;
-}
 
 table .table_header:nth-child(1), table .table_header:nth-child(3), table .table_header:nth-child(5){
 
     display: flex;
     justify-content: space-between;
+}
+
+/* Alineao el texto a la derecha para que el grupo de botones se posicionen */
+.table_pages{
+
+    text-align: right;
+}
+
+/* Cambio el estilo de los anterior y siguiente para que se vea igual */
+.table_pages .button_control_pages{
+
+    max-height: 2.5em;
+
+    background-color: white;
+    color: rgb(117, 117, 117);
+
+    border: 1px solid rgb(206, 206, 206);
 }

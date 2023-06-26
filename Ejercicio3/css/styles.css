@@ -1,12 +1,19 @@
+/* ESTILOS GENERALES */
+
+/* Aplico la font-size a todos los iconos como recomienda bootstrap */
+.bi{
+    font-size: 1em;
+}
+
+/* CONTAINER que contiene todo el menú */
+
 #menu_container{
 
     padding: 2em
 }
 
-/* **************** */
-/* EMPIEZAN ESTILOS */
-/*** DIV SUPERIOR ***/
-/* **************** */
+/* ESTILOS DEL DIV SUPERIOR DEL MENÚ */
+
 #menu_info{
     padding: 1em;
 
@@ -20,12 +27,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-/* Aplico la font-size a todos los iconos como recomienda bootstrap */
-.bi{
-    font-size: 1em;
-}
-
 /* Aplico espacio entre los iconos para que se posicionen correctamente */
 #menu_info_contact i{
     padding: 1em;
@@ -36,19 +37,20 @@
 /* Aplico estilos a los enlaces de login */
 #menu_info_login a{
     margin: 1em;
-
+    /* Estilos de la fuente */
     font-size: 1em;
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-/* **************** */
-/* EMPIEZAN ESTILOS */
-/*** DIV INFERIOR ***/
-/* **************** */
+
+/* ESTILOS DEL DIV INFERIOR DEL MENÚ */
+
+/* Este el es div que incluye a todo */
 #menu{
-    background-color: rgb(21, 172, 231);
+    background-color: rgb(0, 132, 255);
+    
     color: white;
 
     border-bottom-left-radius: 0.5em;
@@ -56,32 +58,42 @@
     
 }
 
+/* Cambio el color de la fuente a blanco */
 #menu_links .bi{
 
     color: white;
 }
 
+/* CONTAINER que contiene el logo */
 #menu_logotype{
 
-    max-width: 12em;
+    height: 8vh;
+    max-width: 11vw;
+    text-align: center;
+    background-color: rgb(21, 172, 231);
+    border-bottom-left-radius: 0.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Imagen del logo */
 #menu_logotype img{
     width: 10em;
 }
 
-
-
-
-
-
-
+/* CONTAINER de la hamburguesa */
 #menu_icon{
 
     max-width: 6em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Enlace de la hamburguesa */
 #menu_icon a{
 
     font-size: 2.5em;
@@ -90,7 +102,9 @@
     padding: 0.1em 0.5em;
 }
 
+/* Lista desordenada del menú */
 #menu_links ul{
+
     margin: 0;
     
     list-style: none;
@@ -100,24 +114,44 @@
     justify-content: start;
 }
 
+/* Enlaces de los elementos del menú */
 #menu_links ul li a{
-    padding: 1.2em;
+
+    height: 8vh;
+
+    padding: 1.5em;
+
     text-decoration: none;
-    color: white
+    color: white;
 }
 
+/* Efecto hover de los enlaces de los elementos del menú */
 #menu_links ul li a:hover{
 
     background-color: white;
     color: black
 }
 
+/* Efecto de los iconos al hover de los enlaces */
 #menu_links a:hover .bi{
 
     background-color: white;
     color: black;
 }
 
+/* Estilos del primer enlace del menú */
+#menu_links ul li:nth-of-type(1) a{
+
+    background-color: white;
+}
+
+/* Estilos del icono del primer enlace del menú */
+#menu_links ul li:nth-of-type(1) a i{
+
+    color: black;
+}
+
+/* CONTAINER de la caja de búsqueda del menú */
 #search_box{
 
     margin: 0 auto;
@@ -132,36 +166,46 @@
     align-items: center;
 }
 
+/* Estilos de la lupa de la caja de búsqueda */
 #search_box .bi-search{
 
     text-align: center;
     color: gray;
 }
 
+/* Estilos de la caja de búsqueda */
 #search_box input{
 
     border: none;
     border-radius: 0.5em;
 }
 
+/* Estilos de la caja de búsqueda cuando está con el cursor */
 #search_box input:focus{
 
     outline: none;
 }
 
+/* Estilo del texto de la caja de búsqueda */
 #search_box input::placeholder{
 
     font-size: 0.8em;
     padding: 1em;
 }
 
+/* CONTAINER de las redes sociales */
 #social_media{
     
+    max-width: 15em;
+    
+    text-align: right;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Estilos de los iconos de las redes sociales y del login */
 #social_media .bi, #account .bi{
 
     margin: 0.5em;
@@ -170,18 +214,13 @@
     font-size: 1.5em;
 }
 
-#social_media{
-
-    max-width: 15em;
-    
-    text-align: right;
-}
-
+/* CONTAINER del login */
 #account{
 
     max-width: 5em;
+    height: 8vh;
 
-    background-color: rgb(20, 141, 189);
+    background-color: rgb(21, 172, 231);
     border-bottom-right-radius: 0.5em;
 
     text-align: center;
@@ -190,8 +229,29 @@
     align-items: center;
 }
 
+/* Estilos del enlace del login */
 #account a{
 
     padding: 1em;
     display: block;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+
+    #menu_info #menu_info_contact i,
+    #menu_info #menu_info_login a{
+
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 672px){
+
+    #menu_info #menu_info_contact i,
+    #menu_info #menu_info_login a{
+
+        font-size: 0.7em;
+    }
 }

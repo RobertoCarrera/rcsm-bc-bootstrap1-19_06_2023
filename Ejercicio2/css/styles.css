@@ -1,79 +1,51 @@
-.form_section{
-    background-color: rgba(128, 128, 128, 0.116);
-    border: 1px solid rgba(128, 128, 128, 0.5);
-    border-radius: 0.5em;
-}
 
-.contact_section_title{
-    color: rgb(0, 132, 255);
-    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-}
-
+/* Seteamos todos los iconos de forma general
+porque todos tienen el mismo tamaño y color */
 .material-symbols-outlined{
     color: rgb(0, 132, 255);
     font-size: 2.5em;
 }
-body > div > div:nth-child(6) {
+
+/* Le damos el estilo al fondo y los bordes */
+.form_section{
+    background-color: rgba(128, 128, 128, 0.116);
+
+    border: 1px solid rgba(184, 183, 183, 0.5);
+    border-radius: 0.5em;
+}
+
+/* Le damos el color al texto y el borde inferior que se ve */
+.contact_section_title{
+    color: rgb(0, 132, 255);
+    
+    border-bottom: 1px solid rgba(184, 183, 183, 0.5);
+}
+
+/* Le aplicamos el margen correcto al 6º div que no está separado bien */
+.contact_input_container:nth-child(6) {
     
     margin-top: 0.5em;
 }
+
+/* Aplicamos flex al container col de los símbolos para que siempre
+estén dentrados */
+.contact_input_container .simbolos{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aplicamos bordes a los 4 primeros inputs y forzamos que ocupen 
+el ancho máximo posible */
 .contact_input input{
     width: 100%;
+
+    border: 1px solid rgba(184, 183, 183, 0.705);
+    border-radius: 0.3em;
 }
 
+/* Aplicamos estilos a los placeholders */
 .contact_input input::placeholder{
     padding-left: 0.5em;
-}
-
-.contact_input_container:nth-of-type(6) .contact_input input{
-    height: 10em;
-}
-
-.contact_input_container:nth-of-type(6) .contact_input input::placeholder{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.5em;
-}
-
-.contact_button button{
-    background-color: rgb(0, 132, 255);
-    color: white;
-    border-radius: 0.3em;
-    border: none;
-    padding: 0.8em 1.5em;
-}
-
-.contact_button button:hover {
-    background-color: black;
-}
-
-@media (max-width: 975px) {
-    .contact_input_container:nth-of-type(6) .contact_input input::placeholder {
-        font-size: 12px;
-        }
-    }
-
-@media (max-width: 768px) {
-    .contact_input_container{
-        margin: 1em;
-    }
-    .contact_input_container .col-2 .material-symbols-outlined{
-        font-size: 1.5em;
-    }
-    .contact_input_container .contact_input input::placeholder{
-        font-size: 14px;
-    }
-    .contact_input_container:nth-of-type(6) .contact_input input::placeholder {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 465px) {
-    .contact_input_container .contact_input input::placeholder{
-        font-size: 12px;
-    }
-    .contact_input_container:nth-of-type(6) .contact_input input::placeholder {
-        font-size: 8px;
-    }
 }

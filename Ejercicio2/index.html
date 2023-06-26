@@ -9,68 +9,74 @@
         <title>Ejercicio 2</title>
     </head>
     <body>
+        <!-- Almacenamos todo en el container de Bootstrap -->
         <div class="container mt-5 text-center form_section">
+            <!-- Esta row sólo contiene el texto superior y le asignamos
+            un padding de 3 para que se genere espacio -->
             <div class="row p-3 contact_section_title">
                 <div class="col-12">
                     <h1>Contact us</h1>
                 </div>
-                
             </div>
+            <!-- A partir de aquí, cada row contiene 2 columnas, una a la izquierda
+            con el logo y a la derecha el input -->
             <div class="row mt-3 justify-content-center align-items-center text-right contact_input_container">
-                <div class="col-2 col-sm-1">
+                <div class="col-2 col-sm-1 simbolos">
                     <span class="material-symbols-outlined">
                         person
                     </span>
                 </div>
-                <div class="col-10 .col-md-8 contact_input">
+                <div class="col-10 col-md-8 contact_input">
                     <input type="text" placeholder="First Name"/>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center contact_input_container">
-                <div class="col-2 col-sm-1">
+                <div class="col-2 col-sm-1 simbolos">
                     <span class="material-symbols-outlined">
                         person
                     </span>
                 </div>
-                <div class="col-10 .col-md-8 contact_input">
+                <div class="col-10 col-md-8 contact_input">
                     <input type="text" placeholder="Last Name"/>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center contact_input_container">
-                <div class="col-2 col-sm-1">
+                <div class="col-2 col-sm-1 simbolos">
                     <span class="material-symbols-outlined">
                         mail
                     </span>
                 </div>
-                <div class="col-10 .col-md-8 contact_input">
+                <div class="col-10 col-md-8 contact_input">
                     <input type="email" placeholder="Email Address"/>
                 </div>
             </div>
             <div class="row justify-content-center align-items-center contact_input_container">
-                <div class="col-2 col-sm-1">
+                <div class="col-2 col-sm-1 simbolos">
                     <span class="material-symbols-outlined">
                         call
                     </span>
                 </div>
-                <div class="col-10 .col-md-8 contact_input">
+                <div class="col-10 col-md-8 contact_input">
                     <input type="text" placeholder="Phone"/>
                 </div>
             </div>
+            <!-- Esta es la única que tiene una peculiaridad. Que el logo se mantiene arriba -->
             <div class="row justify-content-center align-items-center contact_input_container">
                 <!-- El align-self-start mantiene el icono arriba, como en el ejemplo -->
-                <div class="col-2 col-sm-1 align-self-start">
+                <div class="col-2 col-sm-1 align-self-start simbolos">
                     <span class="material-symbols-outlined">
                         comment
                     </span>
                 </div>
-                <div class="col-10 .col-md-8 contact_input">
-                    <input type="text" placeholder="Enter your message for us here. We will get back to you within 2 bussiness days."/>
+                <div class="col-10 col-md-8 contact_input">
+                    <textarea class="form-control" rows="6">Enter your message for us here. We will get back to you within 2 bussiness days</textarea>
                 </div>
             </div>
+            <!-- Esta row contiene el botón -->
             <div class="row m-3">
                 <div class="col">
                     <div class = "contact_button">
-                        <button type="submit">Submit</button>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </div>
             </div>
