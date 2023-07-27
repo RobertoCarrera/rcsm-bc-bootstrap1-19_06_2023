@@ -2,7 +2,7 @@
 
 Ejercicio 1
 
-[https://github.com/RobertoCarrera/rcsm-bc-bootstrap1-19_06_2023/tree/main/Ejercicio1](https://robertocarrera.github.io/rcsm-bc-bootstrap1-19_06_2023/Ejercicio1/)
+(Ver ejercicio)[https://robertocarrera.github.io/rcsm-bc-bootstrap1-19_06_2023/Ejercicio1/]
 
 ![image](https://github.com/RobertoCarrera/rcsm-bc-bootstrap1-19_06_2023/assets/24571167/bde3170b-0281-4860-8a09-a338c7dc1820)
 
